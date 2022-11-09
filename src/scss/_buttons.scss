@@ -1,0 +1,30 @@
+.button, a.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	border: 1px solid transparent;
+	background: none;
+	border-radius: .5rem;
+	padding: 1rem 2rem;
+	font: 500 1.7rem/1 Commissioner, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	height: 5.1rem;
+	transition: border-color .25s, color .25s, background .25s, opacity .25s;
+	cursor: pointer;
+  &:active {
+    transition: none;
+    transform: scale(.95);
+  }
+  &_primary {
+    border-color: $primary-color;
+    background: $primary-color;
+    color: $white-color;
+    &:hover {
+      border-color: $primary-hover-color;
+      background: $primary-hover-color;
+      color: $white-color;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+
+.specialist__card {
+  img {
+    border-radius: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .25s;
+  }
+  &_image {
+    height: 18rem;
+    display: block;
+    position: relative;
+    border-radius: 2rem;
+    background-color: $main-bg-color;
+    will-change: transform;
+    transition: box-shadow .25s;
+    overflow: hidden;
+  }
+  &_text {
+    margin-top: 1rem;
+    font-weight: 600;
+    &_center {
+      text-align: center;
+    }
+  }  
+}
+
+@media (min-width: 992px) {
+  .specialist__card {
+    &_image {
+      height: 10rem;
+    }
+  }
+}

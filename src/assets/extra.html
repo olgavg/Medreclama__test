@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Тестовое задание</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../img/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+  <meta name="description" content="тестовое задание">
+  <meta name="author" content="Кодер">
+  <link href="../../dist/css/main.css" rel="stylesheet">
+  <link href="" rel="stylesheet">
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <style>
+    .table {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .table > div {
+      margin: 6px;
+      padding: 6px 15px;
+    }
+    .table > div:nth-child(-n+2) {
+      background: #717880;
+      color: white;
+      font-weight: 600;
+    } 
+    .table > div:not(:nth-child(-n+2)) {
+      background: #EDEFF2;
+    }
+    .flex-box {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .flex-box__image {
+      border-radius: 20px;  
+      flex-shrink: 0;
+      margin-bottom: 3rem;
+    }
+    .flex-box__image img {
+      border-radius: 20px;
+    }
+    .flex-box__text, p {
+      text-align: justify;
+    }
+    h2 {
+      margin-top: 5rem;
+    }
+
+    @media (min-width: 768px) {
+      .flex-box {
+        flex-direction: row;
+      }
+      .flex-box__image {
+        margin-bottom: 0;
+      }
+      .flex-box__text {
+        margin-left: 3rem;
+      }
+    }
+  </style>
+</head>
+<body class="page">
+  <header class="page__header">
+  </header>
+  <main class="page__content">
+    <section>
+      <div class="container container__pdd_tb">
+        <h1>Йога туры</h1>
+
+        <article>
+          <h2>Первая часть тура: "Искусство дыхания" (25 февраля - 6 марта)</h2>
+
+          <div class="flex-box">
+            <picture class="flex-box__image">
+              <source type="image/webp" srcset="image.webp" height="200" loading="lazy" class="image_hover">
+              <img src="image.jpg" alt="Петров Петр Петрович" height="200" loading="lazy" class="image_hover">
+            </picture>
+            <div class="flex-box__text">
+              <p>Эта часть тура пройдет на берегу Арабского моря, в небольшом южном штате Гоа. Зимние месяцы в Гоа отличаются особо мягким климатом. Погода в это время идеальна, безоблачное синие небо, теплые, и в то же время не жаркие дни и спокойное море. Самый подходящий климат для практики.</p>
+              <p>Кроме того, это даёт возможность искупаться и позагорать в свободное от практик время! </p>
+            </div>
+          </div>
+
+          <h3>В программе семинара:</h3>  
+          <ul class="bullet-list">
+            <li>Пранаямы и крия как основа дыхания</li>  
+            <li>Базовые асаны и их роль в йоге и терапевтический эффект</li> 
+            <li>Основы теории и философии йоги и их применение на практике</li> 
+            <li>Мантры и Бхаджаны – звуковая вибрация и ее значение</li>
+          </ul> 
+          
+          <p><strong>Преподаватель</strong> - Дмитрий Орехов</p>  
+        </article>
+
+        <article>
+          <h2>Вторая часть тура: «Искусство тишины» (7-11 марта)</h2> 
+
+          <p>"Искусство тишины" - пятидневный семинар, посвященный медитации, который пройдет в крупном международном центре йоги под Бангалором. Семинар закончится празднованием Шиваратри в присутствии одного из известнейших учителей йоги - Шри Шри Рави Шанкара.</p>  
+          <p>Бангалор называют город-парк, и действительно Бангалор - "зеленый город", разукрашенный разными оттенками тропических растений. Расположенный внутри континента, он находится на высоте 900 метров над уровнем моря, что делает климат удивительно мягким и свежим, тогда как в других южных индийских городах стоит жара.</p> 
+
+          <h3>В программе семинара:</h3>  
+          <ul class="bullet-list">
+            <li>Основы медитации</li>  
+            <li>Практика пратьяхары (молчание)</li> 
+            <li>Беседы о (строении нашего тела и о законах его существования) </li> 
+            <li>Мантры и Бхаджаны</li>
+          </ul> 
+          
+          <p><strong>Преподаватели</strong> - Индийские мастера</p> 
+        </article>
+
+        <article>
+          <h2>Программа тура: </h2>   
+          
+          <div class="table">
+            <div>Дата</div>
+            <div>Событие</div>
+            
+            <div>25 февраля</div>
+            <div>Вылет из Москвы или Санкт Петербурга</div>
+
+            <div>25 февраля - 5 марта</div>
+            <div>Гоа. Семинар "Искусство Дыхания"</div>
+
+            <div>6 марта</div>
+            <div>Перелет в Бангалор</div>
+            
+            <div>7-11 марта</div>
+            <div>Семинар "Искусство Тишины"</div>
+            
+            <div>11 марта</div>
+            <div>Празднование Шиваратри</div>
+
+            <div>Ночь с 11 на 12ое марта</div>
+            <div>Вылет в Москву или Санкт-Петербург</div>
+          </div>              
+        </article>              
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <div class="container">
+      Footer is always in the bottom of the page!   
+    </div>
+  </footer>
+</body>
+</html>

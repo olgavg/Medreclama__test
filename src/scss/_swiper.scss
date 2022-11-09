@@ -1,0 +1,56 @@
+
+.swiper.swiper_specialist {
+  padding: 0 2.5rem;
+  .swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: 3.8rem;
+    margin: 0;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    color: $main-text-color;
+    background: $white-color;
+    box-shadow: $secondary-box-shadow;
+    transition: .25s;
+    padding: 0.7rem;
+    display: none;
+    &.swiper-button-disabled {
+      pointer-events: none;
+      opacity: .2;
+    }
+    .icon-next, .icon-prev {
+      max-width: 100%;
+      max-height: 100%;
+      display: block;
+      width: 1.7rem;    
+      stroke: $main-text-color; 
+    }
+    &::after {
+      display: none;
+    }
+    &:hover, &:active {
+      background: $primary-color;
+      .icon-next, .icon-prev {
+        stroke: $white-color;
+      }
+    }    
+  }
+  .swiper-button-next {
+    right: 1rem;
+  }
+  .swiper-button-prev {
+    left: 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .swiper.swiper_specialist {
+    .swiper-button-prev, .swiper-button-next {
+      display: flex;
+    }
+  }
+}
